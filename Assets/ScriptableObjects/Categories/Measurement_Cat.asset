@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9478aef4e1a839849a64a90774e22aac, type: 3}
+  m_Name: Measurement_Cat
+  m_EditorClassIdentifier: 
+  displayName: Measurement
+  uiColor: {r: 0.6415094, g: 0.2208971, b: 0.2208971, a: 0}
+  correctItems:
+  - {fileID: 11400000, guid: 501d78a0222fb8c4aa82377386d273c3, type: 2}
+  - {fileID: 11400000, guid: 0eaff2f0aad3c7a4286f2bd6554cda1a, type: 2}
+  - {fileID: 11400000, guid: eb5d747df0fd79f44b21530874ac8a58, type: 2}
+  - {fileID: 11400000, guid: 4c9304ae01a9b6a4bac27206a72417dd, type: 2}
+  - {fileID: 11400000, guid: c31638c2701317c479f11fc25de18083, type: 2}
+  - {fileID: 11400000, guid: 8aede60f2144ada4d874a851148b50f6, type: 2}
+  - {fileID: 11400000, guid: 66c3e31b096dbac49a07b150901e81f3, type: 2}
