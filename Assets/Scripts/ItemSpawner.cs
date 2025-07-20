@@ -7,7 +7,7 @@ using static UnityEditor.Progress;
 public class ItemSpawner : MonoBehaviour
 {
     [Header("Spawn Area")]
-    private float currentX = -10f;
+    private float currentX = -20f;
     public float xOffset = 10f;
     public float spawnInterval = 2f;
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2402940534384046421}
   - component: {fileID: 8351102230209424197}
   - component: {fileID: 4242613330935452693}
+  - component: {fileID: 4459354045825539494}
   m_Layer: 0
   m_Name: IceCreamCone
   m_TagString: Untagged
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0718176, y: 0.19979696, z: 0.07414739}
   m_Center: {x: 0.001635002, y: 0.06987089, z: -0.0011649001}
+--- !u!114 &4459354045825539494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2229378862791225577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2742c8c3fda1647830057207b8c16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 4ab3906ccbf78264d99a18fc24cc5187, type: 2}

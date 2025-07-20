@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3500553150281622716}
   - component: {fileID: 3096882673639986195}
   - component: {fileID: -5641932787043425666}
+  - component: {fileID: 7691266240755692606}
   m_Layer: 0
   m_Name: Ruler
   m_TagString: Untagged
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31003937, y: 0.047765184, z: 0.004265741}
   m_Center: {x: -2.2247461e-10, y: 1.2712835e-10, z: 0.0021328598}
+--- !u!114 &7691266240755692606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701935737614306995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2742c8c3fda1647830057207b8c16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: d12bedc9cf163a7459dbf720406357a0, type: 2}

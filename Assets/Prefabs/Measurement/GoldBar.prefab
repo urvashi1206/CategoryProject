@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7810534163940462961}
   - component: {fileID: 5108494820604998289}
   - component: {fileID: 7562710801959989700}
+  - component: {fileID: -1957081051079475192}
   m_Layer: 0
   m_Name: GoldBar
   m_TagString: Untagged
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.09882163, y: 0.09785575, z: 0.09951378}
   m_Center: {x: 0.00000036135322, y: 0.0000017378526, z: -0.00004034118}
+--- !u!114 &-1957081051079475192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4341575182768419164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2742c8c3fda1647830057207b8c16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 6be1f559910a1564c9b4a9682f88010b, type: 2}

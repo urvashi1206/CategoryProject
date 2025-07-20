@@ -3330,6 +3330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7002881147934921488}
   - component: {fileID: 7400892563188239057}
+  - component: {fileID: 7111936578610808199}
   m_Layer: 0
   m_Name: PokerChips
   m_TagString: Untagged
@@ -3428,6 +3429,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 35.18476, y: 14.032875, z: 17.931955}
   m_Center: {x: 3.4941406, y: 6.516506, z: 19.522326}
+--- !u!114 &7111936578610808199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6444617569555147656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2742c8c3fda1647830057207b8c16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 91ef853070c4abe43976c30fdc6d7048, type: 2}
 --- !u!1 &6531736736781452134
 GameObject:
   m_ObjectHideFlags: 0
