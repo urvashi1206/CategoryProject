@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AthleticShoes_Item
   m_EditorClassIdentifier: 
   displayName: Athletic Shoes
-  prefab: {fileID: 4810371771573794120, guid: 32f38dd0ad154fc4f8426fa63f6726d7, type: 3}
+  prefab: {fileID: 1192917679530839970, guid: 32f38dd0ad154fc4f8426fa63f6726d7, type: 3}
   isCommon: 0

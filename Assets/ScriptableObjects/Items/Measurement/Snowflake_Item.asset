@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Snowflake_Item
   m_EditorClassIdentifier: 
   displayName: Snowflakes
-  prefab: {fileID: 144785077321653846, guid: f26d855ebd7fb664290e6df4e4792e0e, type: 3}
+  prefab: {fileID: 356089205471808048, guid: f26d855ebd7fb664290e6df4e4792e0e, type: 3}
   isCommon: 0

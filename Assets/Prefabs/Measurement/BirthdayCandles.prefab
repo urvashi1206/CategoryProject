@@ -74,17 +74,30 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 232c713aa5772d848b78b000b79ac544, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8606070846307879904}
+      addedObject: {fileID: 1716054942661522824}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 232c713aa5772d848b78b000b79ac544, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1716054942661522824}
+      addedObject: {fileID: 2740809561783411153}
   m_SourcePrefab: {fileID: 100100000, guid: 232c713aa5772d848b78b000b79ac544, type: 3}
 --- !u!1 &4998752519132007569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 232c713aa5772d848b78b000b79ac544, type: 3}
   m_PrefabInstance: {fileID: 5304760147644445120}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &8606070846307879904
+--- !u!114 &1716054942661522824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998752519132007569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2742c8c3fda1647830057207b8c16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 0eaff2f0aad3c7a4286f2bd6554cda1a, type: 2}
+--- !u!65 &2740809561783411153
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,18 +116,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.6363893, y: 6.1181717, z: 0.7781542}
-  m_Center: {x: 0.052624594, y: 0.6840838, z: 0}
---- !u!114 &1716054942661522824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4998752519132007569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2742c8c3fda1647830057207b8c16c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 0eaff2f0aad3c7a4286f2bd6554cda1a, type: 2}
+  m_Size: {x: 13.2727785, y: 12.236343, z: 1.5563084}
+  m_Center: {x: 0.10524919, y: 1.3681676, z: 0}

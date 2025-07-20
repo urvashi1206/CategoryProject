@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MeasuringSpoon_Item
   m_EditorClassIdentifier: 
   displayName: Measuring Spoon
-  prefab: {fileID: 8786184618365254941, guid: 45eeda94b7ffb4541b3842bddc1b2163, type: 3}
+  prefab: {fileID: 1492851769322116286, guid: 45eeda94b7ffb4541b3842bddc1b2163, type: 3}
   isCommon: 0

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SodeCan_Item
   m_EditorClassIdentifier: 
   displayName: Soda Can
-  prefab: {fileID: 7428164048534750518, guid: 5a30f513f3f22c4459ea0c66f0714dc7, type: 3}
+  prefab: {fileID: 7815612203477858021, guid: 5a30f513f3f22c4459ea0c66f0714dc7, type: 3}
   isCommon: 0

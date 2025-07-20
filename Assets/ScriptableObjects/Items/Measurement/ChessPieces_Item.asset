@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ChessPieces_Item
   m_EditorClassIdentifier: 
   displayName: Chess Pieces
-  prefab: {fileID: 2594018588742776031, guid: a88ce7a403e4f5f4b9a469fb5cee63ec, type: 3}
+  prefab: {fileID: 3856479343866305826, guid: 46db2c3c8761deb4dbe1d06c6e74ff49, type: 3}
   isCommon: 0

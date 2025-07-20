@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Hourglass_Item
   m_EditorClassIdentifier: 
   displayName: Hourglass
-  prefab: {fileID: 8438933259176655924, guid: 0566069e38c23734a87d1bfe9ae2e967, type: 3}
+  prefab: {fileID: 3544450354370916805, guid: 0566069e38c23734a87d1bfe9ae2e967, type: 3}
   isCommon: 0
