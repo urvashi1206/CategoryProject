@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9478aef4e1a839849a64a90774e22aac, type: 3}
-  m_Name: Measurement_Communication_Cat
+  m_Name: Communication_Protection_Cat
   m_EditorClassIdentifier: 
-  displayName: Measurement & Communication
-  uiColor: {r: 0.19326274, g: 0.9528302, b: 0.39605942, a: 0}
+  displayName: Communication & Protection
+  uiColor: {r: 0.32084376, g: 0.6603774, b: 0.5458432, a: 0}
   correctItems:
-  - {fileID: 11400000, guid: 2a3a6691daf8eb247864897c2e372653, type: 2}
+  - {fileID: 11400000, guid: d6fb51ac868c6734c9903c6b8502c5a2, type: 2}
+  - {fileID: 11400000, guid: 33c306073167c6249ac03be024bafeb6, type: 2}
+  - {fileID: 11400000, guid: 824de66b1acd5914fac742e1a1951879, type: 2}
