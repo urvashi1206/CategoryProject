@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Communication_Cat
   m_EditorClassIdentifier: 
   displayName: 
-  uiColor: {r: 1, g: 0.91803706, b: 0.1273585, a: 0}
+  uiColor: {r: 1, g: 0.91803706, b: 0.1273585, a: 1}
   correctItems:
   - {fileID: 11400000, guid: 469ffbec20e55ad45b9899a7268ed784, type: 2}
   - {fileID: 11400000, guid: a81fc0772a1041046a64b929287d5dc8, type: 2}

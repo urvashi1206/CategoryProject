@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Communication_Protection_Cat
   m_EditorClassIdentifier: 
   displayName: Communication & Protection
-  uiColor: {r: 0.32084376, g: 0.6603774, b: 0.5458432, a: 0}
+  uiColor: {r: 0.32084376, g: 0.6603774, b: 0.5458432, a: 1}
   correctItems:
   - {fileID: 11400000, guid: d6fb51ac868c6734c9903c6b8502c5a2, type: 2}
   - {fileID: 11400000, guid: 33c306073167c6249ac03be024bafeb6, type: 2}
