@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Timer Settings")]
     public float roundDuration = 60f;
-    public float warningDuration = 15f;
+    public float warningDuration = 5f;
     private float roundTimer;
     private bool warningShown;
 
