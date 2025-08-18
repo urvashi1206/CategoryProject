@@ -40,8 +40,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9220965477914531487}
-  - component: {fileID: 7438287576123923168}
   - component: {fileID: -7577466634469839701}
+  - component: {fileID: -4541446752201563136}
   m_Layer: 0
   m_Name: SpeedLimitSign
   m_TagString: Untagged
@@ -57,7 +57,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095375549700259036}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0882729, y: 0.70157534, z: 0.0882729, w: 0.70157534}
+  m_LocalRotation: {x: -0.08827498, y: 0.7015751, z: 0.08827498, w: 0.7015751}
   m_LocalPosition: {x: 2.3317173, y: 2, z: -0.00000073628746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -67,27 +67,6 @@ Transform:
   - {fileID: 992582461488018244}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -14.343, y: 90, z: 0}
---- !u!65 &7438287576123923168
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095375549700259036}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.28885, y: 29.290688, z: 1}
-  m_Center: {x: 0.031259775, y: 14.1453495, z: 0.00003048303}
 --- !u!114 &-7577466634469839701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +80,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: c70c1f3767dc7d949a72e0945af11fa4, type: 2}
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &-4541446752201563136
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095375549700259036}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4488462714047560529
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +119,7 @@ GameObject:
   - component: {fileID: 992582461488018244}
   - component: {fileID: 876922556055531468}
   - component: {fileID: 1597998465381004849}
+  - component: {fileID: 4125273492756004105}
   m_Layer: 0
   m_Name: speedlimitsign_merged_mesh_result
   m_TagString: Untagged
@@ -185,6 +193,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4125273492756004105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4488462714047560529}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.0088973, y: 28.238218, z: 0.52680206}
+  m_Center: {x: -0.024811568, y: 14.119109, z: -0.006504434}
 --- !u!1 &5075138846443059497
 GameObject:
   m_ObjectHideFlags: 0

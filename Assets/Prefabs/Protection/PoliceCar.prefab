@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 7312924506487120443}
   - component: {fileID: 8959270322229171531}
   - component: {fileID: 5442567419113945418}
+  - component: {fileID: 3199821160355961958}
   m_Layer: 0
   m_Name: CrownVic.WheelBrake.Ft.L_0
   m_TagString: Untagged
@@ -182,6 +183,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3199821160355961958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604694302275498905}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.8104976e-10, y: 0.019492002, z: 0.019635}
+  m_Center: {x: -0.0000000018626451, y: 0.0000000037252903, z: 0}
 --- !u!1 &755252406418676806
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +247,7 @@ GameObject:
   - component: {fileID: 6517178795963350077}
   - component: {fileID: 5482061258588244458}
   - component: {fileID: 3814385189087875626}
+  - component: {fileID: 3755840316753726802}
   m_Layer: 0
   m_Name: CrownVic.WheelBrake.Bk.L_0
   m_TagString: Untagged
@@ -297,6 +320,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3755840316753726802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315116781556383644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.431978e-13, y: 0.019492006, z: 0.019635}
+  m_Center: {x: -0.0000000018626451, y: -0.0000000037252903, z: 0}
 --- !u!1 &1316355313259794206
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +480,7 @@ GameObject:
   - component: {fileID: 1659939600274280937}
   - component: {fileID: 3321644939340498912}
   - component: {fileID: 7663851323325386775}
+  - component: {fileID: 5760599791941641565}
   m_Layer: 0
   m_Name: CrownVic.WheelBrake.Bk.R_0
   m_TagString: Untagged
@@ -508,6 +553,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5760599791941641565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839484737710466062}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.431978e-13, y: 0.019492006, z: 0.019635}
+  m_Center: {x: 0.000000007450581, y: 0, z: 0}
 --- !u!1 &1944891446690591468
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +617,7 @@ GameObject:
   - component: {fileID: 5073734931315202312}
   - component: {fileID: 5706399704704443143}
   - component: {fileID: 4293896269507294539}
+  - component: {fileID: 9222479767530835029}
   m_Layer: 0
   m_Name: Roof light bar_0
   m_TagString: Untagged
@@ -623,6 +690,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9222479767530835029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2406324623544271969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.071306, y: 0.0101915, z: 0.01135}
+  m_Center: {x: -0.0000000037252903, y: -0.0025357653, z: -0.0000000018626451}
 --- !u!1 &3358837143630287495
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +722,7 @@ GameObject:
   - component: {fileID: 5759380011664902157}
   - component: {fileID: 6950384561897923532}
   - component: {fileID: 1472063462915810955}
+  - component: {fileID: 1615765633785176533}
   m_Layer: 0
   m_Name: CrownVic.WheelBrake.Ft.R_0
   m_TagString: Untagged
@@ -706,6 +795,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1615765633785176533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3358837143630287495}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.8104976e-10, y: 0.019492002, z: 0.019635}
+  m_Center: {x: 0, y: -0.0000000037252903, z: 0}
 --- !u!1 &3873623067882452719
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +827,7 @@ GameObject:
   - component: {fileID: 3259797464682467622}
   - component: {fileID: 6456383209377888384}
   - component: {fileID: 1494846621399873413}
+  - component: {fileID: 7316821205736888382}
   m_Layer: 0
   m_Name: CrownVic.Body_0
   m_TagString: Untagged
@@ -789,6 +900,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7316821205736888382
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3873623067882452719}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.123840995, y: 0.086795, z: 0.33521298}
+  m_Center: {x: -1.4411551e-13, y: -0.019591002, z: -0.019690003}
 --- !u!1 &4258935514701126447
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +932,7 @@ GameObject:
   - component: {fileID: 7745609475476167211}
   - component: {fileID: 5144694861993827416}
   - component: {fileID: 1901788516719241905}
+  - component: {fileID: 3566083727427758343}
   m_Layer: 0
   m_Name: CrownVic.Wheel.Bk.R_0
   m_TagString: Untagged
@@ -872,6 +1005,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3566083727427758343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258935514701126447}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.017740002, y: 0.039679013, z: 0.039679002}
+  m_Center: {x: 0.00022350022, y: 0.000000003731951, z: 3.2561609e-15}
 --- !u!1 &4591026284947479253
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +1102,7 @@ GameObject:
   - component: {fileID: 7840570070819866488}
   - component: {fileID: 915172598682215563}
   - component: {fileID: 2495423160557939151}
+  - component: {fileID: 458866969659574313}
   m_Layer: 0
   m_Name: windows glass_0
   m_TagString: Untagged
@@ -1020,6 +1175,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &458866969659574313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5412916307175407893}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.10499199, y: 0.0287985, z: 0.166824}
+  m_Center: {x: 0.000000003725311, y: -0.03408375, z: 0.0028314984}
 --- !u!1 &5553259943634739002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,6 +1207,7 @@ GameObject:
   - component: {fileID: 1310752581486497871}
   - component: {fileID: 8330313583408103831}
   - component: {fileID: 7013698113758257803}
+  - component: {fileID: 1969320930355996960}
   m_Layer: 0
   m_Name: CrownVic.Wheel.Bk.L_0
   m_TagString: Untagged
@@ -1103,6 +1280,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1969320930355996960
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553259943634739002}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.017740002, y: 0.039679013, z: 0.039679002}
+  m_Center: {x: -0.00022350767, y: -6.6608247e-12, z: -3.2561609e-15}
 --- !u!1 &5690259645906026216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1312,7 @@ GameObject:
   - component: {fileID: 7866041372999225317}
   - component: {fileID: 1316501874304846692}
   - component: {fileID: 7480126345681227388}
+  - component: {fileID: 7787357096426099112}
   m_Layer: 0
   m_Name: roof lights_0
   m_TagString: Untagged
@@ -1186,6 +1385,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7787357096426099112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690259645906026216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.056016997, y: 0.004082, z: 0.0038875001}
+  m_Center: {x: -0.026348494, y: -0.000000014901161, z: 0.000022248076}
 --- !u!1 &5931263302257729387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1417,7 @@ GameObject:
   - component: {fileID: 1942233235414858152}
   - component: {fileID: 106594539933183720}
   - component: {fileID: 7849567763877863686}
+  - component: {fileID: 5971376658025588195}
   m_Layer: 0
   m_Name: CrownVic.Wheel.Ft.R_0
   m_TagString: Untagged
@@ -1269,38 +1490,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6058413078711763285
-GameObject:
+--- !u!65 &5971376658025588195
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6425086707524129281}
-  m_Layer: 0
-  m_Name: Sketchfab_model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6425086707524129281
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6058413078711763285}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: -0, w: 0.0000000754979}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100.000015, z: 100.000015}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6267768284863220104}
-  m_Father: {fileID: 6650290595899985005}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 5931263302257729387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.017740004, y: 0.03967901, z: 0.039679002}
+  m_Center: {x: 0.00022350022, y: -0.000000003731951, z: 1.6269499e-15}
 --- !u!1 &6155565183008750773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1554,7 @@ GameObject:
   - component: {fileID: 1280735629131642712}
   - component: {fileID: 3628296678415603463}
   - component: {fileID: 2406141988357496608}
+  - component: {fileID: 5309688614888125898}
   m_Layer: 0
   m_Name: interior_0
   m_TagString: Untagged
@@ -1416,6 +1627,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5309688614888125898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6192692810051427411}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1073745, y: 0.06936201, z: 0.18234052}
+  m_Center: {x: 0.00008324906, y: 0.007463501, z: -0.0004132521}
 --- !u!1 &6500999770771840544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,6 +1659,7 @@ GameObject:
   - component: {fileID: 1653233516285701030}
   - component: {fileID: 3413723125893398925}
   - component: {fileID: 3872341484698822810}
+  - component: {fileID: 3186910908262291288}
   m_Layer: 0
   m_Name: CrownVic.Wheel.Ft.L_0
   m_TagString: Untagged
@@ -1499,6 +1732,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3186910908262291288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6500999770771840544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.017740004, y: 0.03967901, z: 0.039679002}
+  m_Center: {x: -0.00022350394, y: 6.6608247e-12, z: -1.6269499e-15}
 --- !u!1 &7125176545518409409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,7 +1763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6650290595899985005}
   - component: {fileID: 916969586542679742}
-  - component: {fileID: 8793719406835317709}
+  - component: {fileID: -4652265025584114040}
   m_Layer: 0
   m_Name: PoliceCar
   m_TagString: Untagged
@@ -1525,7 +1779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7125176545518409409}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.15215263, w: 0.988357}
+  m_LocalRotation: {x: 0, y: 0, z: 0.15214929, w: 0.98835754}
   m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1539,7 +1793,6 @@ Transform:
   - {fileID: 6018924215375643319}
   - {fileID: 9079531858629323489}
   - {fileID: 7410588661900442201}
-  - {fileID: 6425086707524129281}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 17.503}
 --- !u!114 &916969586542679742
@@ -1555,58 +1808,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 4ec4ed352defed6448d7baa3233057bf, type: 2}
---- !u!65 &8793719406835317709
-BoxCollider:
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &-4652265025584114040
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7125176545518409409}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.140137, y: 11.12808, z: 35.18125}
-  m_Center: {x: 2.1693113, y: 5.064104, z: -0.38988876}
---- !u!1 &8008015000086618926
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6267768284863220104}
-  m_Layer: 0
-  m_Name: Root
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6267768284863220104
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8008015000086618926}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6425086707524129281}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8110618544582014165
 GameObject:
   m_ObjectHideFlags: 0

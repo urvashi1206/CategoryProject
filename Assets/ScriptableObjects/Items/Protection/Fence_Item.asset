@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Fence_Item
   m_EditorClassIdentifier: 
   displayName: Fence
-  prefab: {fileID: 8906660569350200400, guid: 425346540ca2ece4f855ed15a0203b76, type: 3}
+  prefab: {fileID: 6440609819550585613, guid: 425346540ca2ece4f855ed15a0203b76, type: 3}
   isCommon: 0

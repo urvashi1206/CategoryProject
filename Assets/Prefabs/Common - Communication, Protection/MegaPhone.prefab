@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7683191207558325139}
   - component: {fileID: 8967706905815677332}
   - component: {fileID: 1284536093250083031}
+  - component: {fileID: 4727059795081800705}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4727059795081800705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200352413879758631}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 26.017803, y: 21.063108, z: 16.035646}
+  m_Center: {x: 3.002838, y: -2.4956424, z: 0.0046085906}
 --- !u!1 &3871020457012079561
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3797371265464269292}
   - component: {fileID: 1594085913723683969}
-  - component: {fileID: 7645938133775868319}
+  - component: {fileID: 3930997814953259244}
   m_Layer: 0
   m_Name: MegaPhone
   m_TagString: Untagged
@@ -130,24 +152,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 824de66b1acd5914fac742e1a1951879, type: 2}
---- !u!65 &7645938133775868319
-BoxCollider:
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &3930997814953259244
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3871020457012079561}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 29.037094, y: 23.03842, z: 20.055584}
-  m_Center: {x: 3.3479252, y: -1.6480007, z: -0.40585697}
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

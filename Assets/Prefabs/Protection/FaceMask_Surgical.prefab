@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3970794524812057005}
   - component: {fileID: 5019700085003559291}
   - component: {fileID: 5914028860764914292}
+  - component: {fileID: 3399959992549432352}
   m_Layer: 0
   m_Name: pPlane2
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3399959992549432352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727632478375120059}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.119235635, y: 0.10590603, z: 0.053345572}
+  m_Center: {x: -0.000107264175, y: 0.0012201965, z: 0.0018718145}
 --- !u!1 &5371052166169421662
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +116,7 @@ GameObject:
   - component: {fileID: 2723684505378416591}
   - component: {fileID: 8873838900972853595}
   - component: {fileID: 4091792198400348442}
+  - component: {fileID: 9176279036804353570}
   m_Layer: 0
   m_Name: NurbsPath
   m_TagString: Untagged
@@ -166,6 +189,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9176279036804353570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371052166169421662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1548012, y: 0.35711297, z: 0.3187818}
+  m_Center: {x: 0.012901461, y: 0.17692429, z: -0.00072639436}
 --- !u!1 &7738724313009518189
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,8 +219,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6188030176923354507}
-  - component: {fileID: 3315714419743072977}
   - component: {fileID: -4890279710383995792}
+  - component: {fileID: 1143712964941290454}
   m_Layer: 0
   m_Name: FaceMask_Surgical
   m_TagString: Untagged
@@ -201,27 +245,6 @@ Transform:
   - {fileID: 3970794524812057005}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &3315714419743072977
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7738724313009518189}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 16.329636, y: 12.013333, z: 11.816415}
-  m_Center: {x: 0.7045479, y: 6.9011865, z: -2.7512982}
 --- !u!114 &-4890279710383995792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,3 +258,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 3f165c13f02be124eb02c65e9215127e, type: 2}
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &1143712964941290454
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738724313009518189}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

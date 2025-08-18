@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Communication_Protection_Measurement_Cat
   m_EditorClassIdentifier: 
   displayName: Communication & Protection & Measurement
-  uiColor: {r: 0.52765995, g: 0.2891153, b: 0.6886792, a: 1}
+  uiColor: {r: 0.7529412, g: 0.14901961, b: 0.827451, a: 1}
   correctItems:
   - {fileID: 11400000, guid: d3e2e4d92cf65d849a0685c5c888f5a7, type: 2}
   - {fileID: 11400000, guid: a04ce51833987b54a80bd1c7a584d68b, type: 2}

@@ -12,20 +12,38 @@ public class GameManager : MonoBehaviour
 
     [Header("UI")]
     public TMP_Text scoreText;
-    public TMP_Text warningLabel;
+    public WarningBannerUI bannerUI;
     public TMP_Text categoryLabel;
 
     [Header("Timer Settings")]
-    public float roundDuration = 60f;
-    public float warningDuration = 5f;
+    public float roundDuration = 20f;
+    public float warningDuration = 3f;
     private float roundTimer;
     private bool warningShown;
+
+    [Header("SFX")]
+    public AudioSource sfxCorrect;
+    public AudioSource sfxWrong;
+    public AudioClip correctSfx;
+    public AudioClip wrongSfx;
+    [Range(0f, 1f)] public float correctVolume = 0.9f;
+    [Range(0f, 2f)] public float wrongVolume = 0.9f;
+    [Range(0.5f, 2f)] public float commonPitch = 1.15f;
+
+    [Header("Scoring")]
+    public int pointsPerCorrect = 10;
+    public int wrongPenalty = -5;       // keep negative for clarity
+    public int commonMultiplier = 2;    // x2 for common items
+
+    public float wrongStartSec = 0.70f;
 
     private int score;
 
     void Awake()
     {
         GameEvents.OnCollect += OnCollect;
+        if (correctSfx) correctSfx.LoadAudioData();
+        if (wrongSfx) wrongSfx.LoadAudioData();
     }
     // Start is called before the first frame update
     void Start()
@@ -33,7 +51,7 @@ public class GameManager : MonoBehaviour
         NextCategory();
         score = 0;
         scoreText.text = "Score: 0";
-        warningLabel.gameObject.SetActive(false);
+        if (bannerUI) bannerUI.gameObject.SetActive(false);
         roundTimer = roundDuration;
     }
 
@@ -44,9 +62,12 @@ public class GameManager : MonoBehaviour
 
         if (!warningShown && roundTimer <= warningDuration)
         {
-            ShowWarningUI("Category changing soon!");
+            ShowWarningUI();
             warningShown = true;
         }
+
+        if (warningShown && bannerUI)
+            bannerUI.UpdateCountdown(roundTimer);
 
         if (roundTimer <= 0)
         {
@@ -60,7 +81,40 @@ public class GameManager : MonoBehaviour
     void OnCollect(ItemSO itm)
     {
         bool isCorrect = CurrentCategory.correctItems.Contains(itm);
-        score += isCorrect ? 10 : -5;
+
+        if (isCorrect)
+        {
+            // if common item, award double
+            bool isCommon = itm != null && itm.isCommon;
+            int multiplier = isCommon ? commonMultiplier : 1;
+            score += pointsPerCorrect * multiplier;
+
+            if (sfxCorrect && correctSfx)
+            {
+                sfxCorrect.pitch = isCommon ? commonPitch : 1f;
+                sfxCorrect.PlayOneShot(correctSfx, correctVolume);
+                sfxCorrect.pitch = 1f;
+            }
+        }
+
+        else
+        {
+            score += wrongPenalty;
+
+            if (sfxWrong && wrongSfx)
+            {
+                sfxWrong.clip = wrongSfx;
+                sfxWrong.volume = wrongVolume;
+
+                int offsetSamples = Mathf.Clamp(
+                    Mathf.FloorToInt(wrongSfx.frequency * wrongStartSec),
+                    0, wrongSfx.samples - 1
+                );
+                sfxWrong.timeSamples = offsetSamples;
+                sfxWrong.Play();
+            }
+        }
+
         scoreText.text = "Score: " + score.ToString();
     }
 
@@ -72,16 +126,14 @@ public class GameManager : MonoBehaviour
         categoryLabel.color = CurrentCategory.uiColor;
     }
 
-    void ShowWarningUI(string msg)
+    void ShowWarningUI()
     {
-        warningLabel.text = msg;
-        warningLabel.gameObject.SetActive(true);
-        warningLabel.color = new Color(1f, 0.7f, 0f);
+        if (bannerUI) bannerUI.Show(roundTimer);
     }
 
     void HideWarningUI()
     {
-        warningLabel.gameObject.SetActive(false);
+        if (bannerUI) bannerUI.Hide();
     }
 
     public int GetScore()

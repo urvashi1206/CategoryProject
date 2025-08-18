@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Measurement_Cat
   m_EditorClassIdentifier: 
   displayName: Measurement
-  uiColor: {r: 0.6415094, g: 0.2208971, b: 0.2208971, a: 1}
+  uiColor: {r: 0.050980393, g: 0.5803922, b: 0.53333336, a: 1}
   correctItems:
   - {fileID: 11400000, guid: d2f4ccbc635a38e40a45b7884cc4c59a, type: 2}
   - {fileID: 11400000, guid: 501d78a0222fb8c4aa82377386d273c3, type: 2}

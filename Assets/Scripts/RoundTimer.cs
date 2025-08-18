@@ -2,26 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 public class RoundTimer : MonoBehaviour
 {
+    [Header("Timer")]
     public float roundDuration = 60f;
     private float timeLeft;
     private bool isRunning = true;
 
-    public TMP_Text timerText;
-    public GameObject gameOverPanel;
-    public TMP_Text finalScoreText;
-    public GameManager gameManager;
-    public GameObject player;
-    public GameObject spawner;
+    [Header("Refs")]
+    public TMP_Text timerText;          // "Time: 60"
+    public GameManager gameManager;     // to read score
+    public GameOverUI gameOverUI;       // << drag your GameOverUI here
+
+    [Header("Stop on End")]
+    public MonoBehaviour player; // drag your CarController (or ArcadeCarController)
+    public Rigidbody carRigidbody;      // drag the car Rigidbody (to zero velocities)
+    public GameObject spawner;          // item spawner root to disable
 
     // Start is called before the first frame update
     void Start()
     {
         timeLeft = roundDuration;
         UpdateTimerUI();
-        gameOverPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -43,28 +47,23 @@ public class RoundTimer : MonoBehaviour
 
     void UpdateTimerUI()
     {
-        timerText.text = "Time: " + Mathf.CeilToInt(timeLeft).ToString();
+        if (timerText)
+            timerText.text = "Time: " + Mathf.CeilToInt(timeLeft).ToString();
     }
 
     void EndGame()
     {
-        Debug.Log("Time’s up! Showing Game Over screen.");
-
-        // Show game over panel
-        gameOverPanel.SetActive(true);
-
-        // Show final score
-        finalScoreText.text = "Final Score: " + gameManager.GetScore().ToString();
-
-        // Stop car and spawner
-        if (player.TryGetComponent<CarController>(out var car))
+        if (player) player.enabled = false;
+        if (carRigidbody)
         {
-            car.enabled = false;
+            carRigidbody.velocity = Vector3.zero;
+            carRigidbody.angularVelocity = Vector3.zero;
         }
 
-        if (spawner != null)
-        {
-            spawner.SetActive(false);
-        }
+        if (spawner) spawner.SetActive(false);
+        // Show animated Game Over with score
+        int finalScore = gameManager ? gameManager.GetScore() : 0;
+        if (gameOverUI) gameOverUI.Show(finalScore);
+        else Debug.LogWarning("GameOverUI reference not assigned on RoundTimer.");
     }
 }

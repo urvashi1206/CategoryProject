@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1265483017809497026}
   - component: {fileID: 825034526434574639}
   - component: {fileID: 4449919726822742795}
+  - component: {fileID: 7432623958053924089}
   m_Layer: 0
   m_Name: '@'
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7432623958053924089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999667782140227361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 635.9375, y: 20.000038, z: 651.9532}
+  m_Center: {x: -355.85938, y: -9.999953, z: -234.57047}
 --- !u!1 &2828663128752740958
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +116,7 @@ GameObject:
   - component: {fileID: 4983457837271206482}
   - component: {fileID: 8301136773022774395}
   - component: {fileID: 7510902806188964929}
+  - component: {fileID: 5309879433525469875}
   m_Layer: 0
   m_Name: open_letter
   m_TagString: Untagged
@@ -166,6 +189,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5309879433525469875
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2828663128752740958}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2000, y: 414.1416, z: 1900.0789}
+  m_Center: {x: 0, y: -0.000020863969, z: -350.03934}
 --- !u!1 &7919633071991584012
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1605844786353728329}
   - component: {fileID: 8877964132522378789}
-  - component: {fileID: 5642421328853531207}
+  - component: {fileID: 8486369769481570882}
   m_Layer: 0
   m_Name: EmailIcon
   m_TagString: Untagged
@@ -214,24 +258,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: a81fc0772a1041046a64b929287d5dc8, type: 2}
---- !u!65 &5642421328853531207
-BoxCollider:
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &8486369769481570882
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7919633071991584012}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2146.669, y: 622.7118, z: 2005.7413}
-  m_Center: {x: -185.37373, y: -65.98833, z: -192.09177}
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

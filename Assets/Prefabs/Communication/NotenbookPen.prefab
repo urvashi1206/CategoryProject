@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7999475515767801383}
   - component: {fileID: 5914572988520816437}
   - component: {fileID: 3157467404635611075}
+  - component: {fileID: 8484993228114593404}
   m_Layer: 0
   m_Name: Rectangle004
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8484993228114593404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405820197680789082}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.06673, y: 24.89773, z: 4.847828}
+  m_Center: {x: 1.1473668, y: 0.000000036706897, z: -0.062121946}
 --- !u!1 &6707022329010104075
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8001286036901404550}
   - component: {fileID: 9212424313960334350}
-  - component: {fileID: -3785811560524996884}
+  - component: {fileID: 4808551109996831236}
   m_Layer: 0
   m_Name: NotenbookPen
   m_TagString: Untagged
@@ -131,27 +153,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 2561257dc946de041bb6c505766ef7d4, type: 2}
---- !u!65 &-3785811560524996884
-BoxCollider:
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &4808551109996831236
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6707022329010104075}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 27.387358, y: 15.561817, z: 28.521122}
-  m_Center: {x: 0.9984417, y: 3.230141, z: 0.112549864}
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8876322406572855970
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +192,7 @@ GameObject:
   - component: {fileID: 1049606737957416127}
   - component: {fileID: 7071528985203869761}
   - component: {fileID: 3779455671411342285}
+  - component: {fileID: 2777512204154199989}
   m_Layer: 0
   m_Name: Pencil
   m_TagString: Untagged
@@ -235,3 +265,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2777512204154199989
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876322406572855970}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.7915788, y: 10.248976, z: 2.791579}
+  m_Center: {x: 0.00000017881416, y: -0.0000019073486, z: -0.00000077486055}

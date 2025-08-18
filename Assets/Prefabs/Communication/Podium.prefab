@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2694413046380208259}
   - component: {fileID: 2869094331674436826}
   - component: {fileID: 8804175368883877887}
+  - component: {fileID: 7633502972926884233}
   m_Layer: 0
   m_Name: Podium
   m_TagString: Untagged
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 2885c9571bba4e84a8b7e6ae0ff7b8c2, type: 2}
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
 --- !u!65 &8804175368883877887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120,3 +122,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.9592013, y: 4.1148534, z: 9.995365}
   m_Center: {x: 0.0000009729529, y: -0.3865975, z: 4.997682}
+--- !u!54 &7633502972926884233
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965679800699595494}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Protection_Cat
   m_EditorClassIdentifier: 
   displayName: Protection
-  uiColor: {r: 0.24230155, g: 0.89208275, b: 0.9339623, a: 1}
+  uiColor: {r: 0.8509804, g: 0.46666667, b: 0.023529412, a: 1}
   correctItems:
   - {fileID: 11400000, guid: b7ef26c9c114d4040a27356a8be09f8d, type: 2}
   - {fileID: 11400000, guid: 33db8850a1278da43a868ebb4af29d37, type: 2}

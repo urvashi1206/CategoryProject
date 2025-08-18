@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7682361531548329526}
   - component: {fileID: 6861408368846622790}
   - component: {fileID: 6933382880696903961}
+  - component: {fileID: 4049153646246475452}
   m_Layer: 0
   m_Name: Sheet_Metall_Door_wall.doorway.door.005_Sheet_Metall_Door_w.006
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4049153646246475452
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679839707428994832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.041403614, y: 0.040385667, z: 0.011645698}
+  m_Center: {x: 0.00027118248, y: 0.04724776, z: -0.005599057}
 --- !u!1 &1353384949585685370
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +116,7 @@ GameObject:
   - component: {fileID: 8588777561659763815}
   - component: {fileID: 3642158195977705285}
   - component: {fileID: 8356381851220016968}
+  - component: {fileID: 7076236018723161512}
   m_Layer: 0
   m_Name: Sheet_Metall_Door_wall.doorway.door.005_Sheet_Metall_Door_w.003
   m_TagString: Untagged
@@ -166,6 +189,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7076236018723161512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353384949585685370}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.030638656, y: 0.030444266, z: 0.009717616}
+  m_Center: {x: 0.073962055, y: 0.11038273, z: -0.0054372917}
 --- !u!1 &3243902826592721576
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +221,7 @@ GameObject:
   - component: {fileID: 6563396532070006160}
   - component: {fileID: 1612194029290984724}
   - component: {fileID: 9076940666911886306}
+  - component: {fileID: 1691885779269771940}
   m_Layer: 0
   m_Name: Sheet_Metall_Door_wall.doorway.door.005_Sheet_Metall_Door_w.005
   m_TagString: Untagged
@@ -249,6 +294,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1691885779269771940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243902826592721576}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.031063283, y: 0.02974392, z: 0.009141306}
+  m_Center: {x: -0.08059854, y: 0.09969088, z: -0.0054179383}
 --- !u!1 &5784734865946363494
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +326,7 @@ GameObject:
   - component: {fileID: 2956540228556278405}
   - component: {fileID: 799879201589359894}
   - component: {fileID: 5551470878349871519}
+  - component: {fileID: 661814191514526403}
   m_Layer: 0
   m_Name: Sheet_Metall_Door_wall.doorway.door.005_Sheet_Metall_Door_w.002
   m_TagString: Untagged
@@ -332,6 +399,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &661814191514526403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784734865946363494}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.031599134, y: 0.029743897, z: 0.0023678946}
+  m_Center: {x: 0.06480302, y: 0.18863589, z: -0.005428269}
 --- !u!1 &6249201813237627399
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,8 +429,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8622244069403401063}
-  - component: {fileID: 7349965864070957488}
   - component: {fileID: -2880001136770513241}
+  - component: {fileID: 2740030814711645469}
   m_Layer: 0
   m_Name: Stars
   m_TagString: Untagged
@@ -358,7 +446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6249201813237627399}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.18211891, y: 0.6832516, z: 0.18211891, w: 0.6832516}
+  m_LocalRotation: {x: -0.18211849, y: 0.68325174, z: 0.18211849, w: 0.68325174}
   m_LocalPosition: {x: 5.8914275, y: 1.9398117, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -371,27 +459,6 @@ Transform:
   - {fileID: 7682361531548329526}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -29.85, y: 90, z: 0}
---- !u!65 &7349965864070957488
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249201813237627399}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 19.283516, y: 20.676231, z: 1.2327185}
-  m_Center: {x: -0.27456284, y: 12.257996, z: 0.11641267}
 --- !u!114 &-2880001136770513241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +472,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: b59dcdf85e9ef9a42a221125ed5a1bac, type: 2}
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &2740030814711645469
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249201813237627399}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7441225118112306179
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +511,7 @@ GameObject:
   - component: {fileID: 2260504247763949374}
   - component: {fileID: 4533533052138586072}
   - component: {fileID: 7414518454973136901}
+  - component: {fileID: 1363023120315501034}
   m_Layer: 0
   m_Name: Sheet_Metall_Door_wall.doorway.door.005_Sheet_Metall_Door_w.004
   m_TagString: Untagged
@@ -488,6 +584,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1363023120315501034
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441225118112306179}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.03080414, y: 0.030795382, z: 0.0068768756}
+  m_Center: {x: -0.045499265, y: 0.19797462, z: -0.015863875}
 --- !u!1 &8169054702902379158
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +616,7 @@ GameObject:
   - component: {fileID: 3480276737108869389}
   - component: {fileID: 5209739081365205562}
   - component: {fileID: 5101289410831739917}
+  - component: {fileID: 7707633563705146616}
   m_Layer: 0
   m_Name: Sheet_Metall_Door_wall.doorway.door.005_Sheet_Metall_Door_w.001
   m_TagString: Untagged
@@ -571,3 +689,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7707633563705146616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169054702902379158}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13169195, y: 0.1239602, z: 0.009868407}
+  m_Center: {x: 0.0003233042, y: 0.14354186, z: 0.0005061961}

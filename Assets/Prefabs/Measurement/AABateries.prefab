@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1456938302256825882}
   - component: {fileID: 5183735322529918747}
   - component: {fileID: 8740266787013471856}
+  - component: {fileID: 8674516705016284378}
   m_Layer: 0
   m_Name: g_battery
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8674516705016284378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490205540034565134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.03347895, y: 0.03347895, z: 0.13621321}
+  m_Center: {x: 0, y: -3.5527137e-15, z: -0.00087659806}
 --- !u!1 &2878269134776670424
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,8 +114,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6608161685796728266}
-  - component: {fileID: 2414289909352109820}
   - component: {fileID: 5226121145842933748}
+  - component: {fileID: -2033930088940070670}
   m_Layer: 0
   m_Name: AABateries
   m_TagString: Untagged
@@ -118,27 +140,6 @@ Transform:
   - {fileID: 2670561997144875395}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2414289909352109820
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2878269134776670424}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 14.121039, y: 14.8546715, z: 12.447981}
-  m_Center: {x: 5.072059, y: 6.9273357, z: 0.6461699}
 --- !u!114 &5226121145842933748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +153,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: d2f4ccbc635a38e40a45b7884cc4c59a, type: 2}
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
+--- !u!54 &-2033930088940070670
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878269134776670424}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9204931949124302477
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +192,7 @@ GameObject:
   - component: {fileID: 2670561997144875395}
   - component: {fileID: 4228567059429899344}
   - component: {fileID: 8503926628824847628}
+  - component: {fileID: 6610014766211014159}
   m_Layer: 0
   m_Name: g_battery.001
   m_TagString: Untagged
@@ -235,3 +265,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6610014766211014159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9204931949124302477}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.033478953, y: 0.03347896, z: 0.13621321}
+  m_Center: {x: 3.028638e-11, y: -5.224976e-11, z: -0.0008766055}

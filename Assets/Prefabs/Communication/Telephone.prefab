@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5221577204589566595}
   - component: {fileID: -1380984654975943582}
   - component: {fileID: -3185640849393060230}
+  - component: {fileID: -867042348558118754}
   m_Layer: 0
   m_Name: Telephone
   m_TagString: Untagged
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 94e74901584f6a141ba3405ac97ac5ba, type: 2}
+  worldDegreesPerSecond: {x: 0, y: 50, z: 0}
 --- !u!65 &-3185640849393060230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -119,3 +121,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.18848222, y: 0.34443802, z: 0.07839541}
   m_Center: {x: 0.026479596, y: -0.076139495, z: 0.039835844}
+--- !u!54 &-867042348558118754
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839641187974200604}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
