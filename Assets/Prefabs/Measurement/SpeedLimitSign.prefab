@@ -57,8 +57,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095375549700259036}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.08827498, y: 0.7015751, z: 0.08827498, w: 0.7015751}
-  m_LocalPosition: {x: 2.3317173, y: 2, z: -0.00000073628746}
+  m_LocalRotation: {x: -0.45451945, y: 0.54167527, z: 0.45451945, w: 0.54167527}
+  m_LocalPosition: {x: 2.3317173, y: 5, z: -0.00000073628746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66,7 +66,7 @@ Transform:
   - {fileID: 1334387936953239681}
   - {fileID: 992582461488018244}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -14.343, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: -80, y: 90, z: 0}
 --- !u!114 &-7577466634469839701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 992582461488018244}
   - component: {fileID: 876922556055531468}
   - component: {fileID: 1597998465381004849}
-  - component: {fileID: 4125273492756004105}
+  - component: {fileID: 6730327718566902527}
   m_Layer: 0
   m_Name: speedlimitsign_merged_mesh_result
   m_TagString: Untagged
@@ -193,7 +193,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4125273492756004105
+--- !u!65 &6730327718566902527
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,8 +212,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.0088973, y: 28.238218, z: 0.52680206}
-  m_Center: {x: -0.024811568, y: 14.119109, z: -0.006504434}
+  m_Size: {x: 8.348159, y: 47.063698, z: 0.8780042}
+  m_Center: {x: -0.041353226, y: 23.531849, z: -0.010841625}
 --- !u!1 &5075138846443059497
 GameObject:
   m_ObjectHideFlags: 0

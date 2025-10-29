@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1456938302256825882}
   - component: {fileID: 5183735322529918747}
   - component: {fileID: 8740266787013471856}
-  - component: {fileID: 8674516705016284378}
+  - component: {fileID: 257695619746452651}
   m_Layer: 0
   m_Name: g_battery
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8674516705016284378
+--- !u!65 &257695619746452651
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,8 +103,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.03347895, y: 0.03347895, z: 0.13621321}
-  m_Center: {x: 0, y: -3.5527137e-15, z: -0.00087659806}
+  m_Size: {x: 0.058588162, y: 0.058588162, z: 0.23837312}
+  m_Center: {x: 0.0000000027939677, y: -9.313226e-10, z: -0.0015340596}
 --- !u!1 &2878269134776670424
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,15 +131,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2878269134776670424}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.58, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.573976, w: 0.81887215}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1456938302256825882}
   - {fileID: 2670561997144875395}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 70.056}
 --- !u!114 &5226121145842933748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 2670561997144875395}
   - component: {fileID: 4228567059429899344}
   - component: {fileID: 8503926628824847628}
-  - component: {fileID: 6610014766211014159}
+  - component: {fileID: 132642044946292153}
   m_Layer: 0
   m_Name: g_battery.001
   m_TagString: Untagged
@@ -265,7 +265,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6610014766211014159
+--- !u!65 &132642044946292153
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,5 +284,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.033478953, y: 0.03347896, z: 0.13621321}
-  m_Center: {x: 3.028638e-11, y: -5.224976e-11, z: -0.0008766055}
+  m_Size: {x: 0.058588173, y: 0.058588192, z: 0.23837312}
+  m_Center: {x: 9.999005e-10, y: 0.000000002656812, z: -0.0015340671}

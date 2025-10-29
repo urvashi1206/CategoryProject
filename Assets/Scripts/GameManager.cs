@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -30,6 +30,14 @@ public class GameManager : MonoBehaviour
     [Range(0f, 2f)] public float wrongVolume = 0.9f;
     [Range(0.5f, 2f)] public float commonPitch = 1.15f;
 
+    [Header("FX (Text)")]
+    public TextBurstFX textBurstPrefab;   // generic prefab
+    public float fxYOffset = 1.2f;        // lift above ground
+    public float correctFontSize = 10f;
+    public float wrongFontSize = 10f;
+    public Color correctColor = new Color(0f, 1f, 0.5f, 1f); // mint green
+    public Color wrongColor = new Color(1f, 0.3f, 0.2f, 1f); // red/orange
+
     [Header("Scoring")]
     public int pointsPerCorrect = 10;
     public int wrongPenalty = -5;       // keep negative for clarity
@@ -42,9 +50,55 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         GameEvents.OnCollect += OnCollect;
+        GameEvents.OnCollectWithPos += OnCollectWithPos;
         if (correctSfx) correctSfx.LoadAudioData();
         if (wrongSfx) wrongSfx.LoadAudioData();
     }
+
+    void OnDestroy()
+    {
+        GameEvents.OnCollect -= OnCollect;
+        GameEvents.OnCollectWithPos -= OnCollectWithPos;
+    }
+
+    void OnCollectWithPos(ItemSO itm, Vector3 worldPos)
+    {
+        //bool isCorrect = CurrentCategory.correctItems.Contains(itm);
+        //Vector3 spawnPos = worldPos + Vector3.up * fxYOffset;
+
+        //if (textBurstPrefab)
+        //{
+        //    var fx = Instantiate(textBurstPrefab, spawnPos, Quaternion.identity);
+        //    if (isCorrect)
+        //    {
+        //        bool isCommon = itm != null && itm.isCommon;
+        //        float size = isCommon ? correctFontSize * 1.15f : correctFontSize;
+        //        TextBurstFX.Spawn(textBurstPrefab, spawnPos, "Cha-Ching!", correctColor, size);
+        //    }
+        //    else
+        //    {
+        //        TextBurstFX.Spawn(textBurstPrefab, spawnPos, "Crunch!", wrongColor, wrongFontSize);
+        //    }
+        //}
+        if (!textBurstPrefab) return;
+
+        bool isCorrect = CurrentCategory.correctItems.Contains(itm);
+        Vector3 spawnPos = worldPos + Vector3.up * fxYOffset;
+
+        var fx = Instantiate(textBurstPrefab, spawnPos, Quaternion.identity);
+
+        if (isCorrect)
+        {
+            bool isCommon = itm != null && itm.isCommon;
+            float size = isCommon ? correctFontSize * 1.15f : correctFontSize;
+            fx.Init("cha-ching!", correctColor, size);
+        }
+        else
+        {
+            fx.Init("crunch!", wrongColor, wrongFontSize);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f627c0e8ac9404eac5e2526d4a50d0, type: 3}
+  m_Name: CarCatalogSO
+  m_EditorClassIdentifier: 
+  cars:
+  - {fileID: 11400000, guid: ddebc3e425aa2a7408ee7eabb15cdaac, type: 2}
+  - {fileID: 11400000, guid: b09c258ee03159946991f32d8f699ef7, type: 2}
+  - {fileID: 11400000, guid: bf47b8b90ffd6c945aa05748b09fbe0a, type: 2}
+  - {fileID: 11400000, guid: 4c65ea8de8cd08e44a789d1bca6e9aed, type: 2}
+  - {fileID: 11400000, guid: c21cd41d289cb5e43b9c47d035a0379b, type: 2}
+  - {fileID: 11400000, guid: add0a10623df92a46a8b4213b8d88897, type: 2}
+  - {fileID: 11400000, guid: a7ee30d208036e1478b7e932d0f44103, type: 2}
+  - {fileID: 11400000, guid: f4a52d2effbf9224fa7da06967b9b428, type: 2}
+  - {fileID: 11400000, guid: 23fe26acee8894146adc575b453343ae, type: 2}
+  - {fileID: 11400000, guid: 7b9675dbd70e2724b93e1648db80900b, type: 2}

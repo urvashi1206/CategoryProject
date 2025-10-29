@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 230853008577159618}
   - component: {fileID: 2922155986005098330}
   - component: {fileID: 3942869419183249853}
-  - component: {fileID: 4567474482005677829}
+  - component: {fileID: 640600560991573116}
   m_Layer: 0
   m_Name: Hourgalss
   m_TagString: Untagged
@@ -85,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4567474482005677829
+--- !u!65 &640600560991573116
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,8 +104,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.329163, y: 19.450485, z: 6.4233103}
-  m_Center: {x: -0.0000009536745, y: 9.725243, z: 0.00000030621172}
+  m_Size: {x: 14.278564, y: 33.343693, z: 11.01139}
+  m_Center: {x: -0.000001907349, y: 16.671846, z: 0.0000014104892}
 --- !u!1 &3544450354370916805
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ Transform:
   m_GameObject: {fileID: 3544450354370916805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.34795037, w: 0.937513}
-  m_LocalPosition: {x: 6.2267776, y: 6.7551765, z: 0}
+  m_LocalPosition: {x: 6.2267776, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 322412519407843257}
   - component: {fileID: 6170920454428130249}
   - component: {fileID: 1789103330383453155}
-  - component: {fileID: 7616623962393369921}
+  - component: {fileID: 5453217673977353700}
   m_Layer: 0
   m_Name: polySurface4988
   m_TagString: Untagged
@@ -266,7 +266,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7616623962393369921
+--- !u!65 &5453217673977353700
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,5 +285,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.6528635, y: 9.401036, z: 4.39667}
-  m_Center: {x: 0, y: 6.0020576, z: -1.4210855e-14}
+  m_Size: {x: 7.976338, y: 16.116062, z: 7.5371485}
+  m_Center: {x: 0, y: 10.289242, z: 3.5527137e-14}

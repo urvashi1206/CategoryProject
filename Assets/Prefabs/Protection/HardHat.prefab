@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2095707788852104806}
   - component: {fileID: 542571963884481431}
   - component: {fileID: 2508872506977885122}
-  - component: {fileID: 2217838334065606506}
   - component: {fileID: 2679138625182602705}
+  - component: {fileID: 1410918892460039094}
   m_Layer: 0
   m_Name: HardHat
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5896180146455243116}
   serializedVersion: 2
   m_LocalRotation: {x: 0.07003587, y: 0.3919038, z: -0.16908173, w: 0.9016195}
-  m_LocalPosition: {x: 0, y: 8, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100,27 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: e59921db47f39514589b994f3e840011, type: 2}
   worldDegreesPerSecond: {x: 0, y: 50, z: 0}
---- !u!65 &2217838334065606506
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5896180146455243116}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 12.788328, y: 7.789454, z: 17.166466}
-  m_Center: {x: 0.05558764, y: 3.894727, z: 1.8169599}
 --- !u!54 &2679138625182602705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -148,3 +127,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1410918892460039094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5896180146455243116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 21.313879, y: 12.982424, z: 28.610779}
+  m_Center: {x: 0.09264629, y: 6.491212, z: 3.028267}

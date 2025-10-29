@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5119506014542831876}
   - component: {fileID: 999606474931559256}
   - component: {fileID: 6039105603277519088}
-  - component: {fileID: 8005855380123640366}
   - component: {fileID: -2597576768562464726}
   - component: {fileID: -2805465288173286877}
+  - component: {fileID: 3697246321124020744}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8187053699868994669}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.27011773, w: 0.9628273}
-  m_LocalPosition: {x: 0, y: 6.38, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86,27 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8005855380123640366
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8187053699868994669}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.13999999, y: 0.086375386, z: 0.14}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-2597576768562464726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,3 +127,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &3697246321124020744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187053699868994669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.27999997, y: 0.17275077, z: 0.28}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -1,82 +1,116 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
-using static UnityEditor.Progress;
 
 public class ItemSpawner : MonoBehaviour
 {
-    [Header("Spawn Settings")]
-    public float spawnInterval = 2f;
-    public float xOffset = 0f;
-    private float currentX = -120f;
+    [Header("Timing / Rows")]
+    public float spawnInterval = 0.6f;   // how often to spawn a row
+    public float rowSpacing = 8f;        // how far to move forward (X) for the next row
+    public int minPerRow = 1;            // items per row
+    public int maxPerRow = 3;
+
+    [Header("Lane (world Z)")]
+    public float laneCenterZ = 0f;
+    public float laneHalfWidth = 6f;     // usable Z is [center - half .. center + half]
+    public float edgePadding = 0.5f;     // keep a bit away from the edges
+    public float zJitter = 0.25f;        // small wobble so rows aren’t too perfect
+
+    [Header("Height")]
+    public float groundY = 0f;           // set this to your road’s Y
+
+    [Header("Start (world X forward is negative)")]
+    public float startX = -40f;          // first row X
     private float nextX;
     private float timer;
 
-    [Header("Placement")]
-    [Tooltip("Center of the drivable lane on Z (world space).")]
-    public float laneCenterZ = 0f;
-    [Tooltip("Half the usable lane width. If you can drive from Z=-6 to Z=+6, set 6.")]
-    public float laneHalfWidth = 6f;
-    [Tooltip("Keeps spawns away from the edges a bit.")]
-    public float edgePadding = 0.5f;
-    [Tooltip("Small randomization on X so items don�t form a perfect line.")]
-    public float xJitter = 3f;
-
+    [SerializeField] public ItemDatabaseSO itemDatabase;
     private List<ItemSO> allItems;
 
-    [Header("Category Source")]
-    [SerializeField] public ItemDatabaseSO itemDatabase;
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
-        nextX = currentX;
-        allItems = new List<ItemSO>(itemDatabase.allItems);
-        timer = 0f;
+        nextX = startX;
+
+        allItems = new List<ItemSO>(itemDatabase.allItems ?? new List<ItemSO>());
+        allItems.RemoveAll(i => !i || !i.prefab);
+
+        minPerRow = Mathf.Clamp(minPerRow, 1, 8);
+        maxPerRow = Mathf.Max(maxPerRow, minPerRow);
+        edgePadding = Mathf.Clamp(edgePadding, 0f, Mathf.Max(0f, laneHalfWidth));
+        if (rowSpacing <= 0f) rowSpacing = 6f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (allItems == null || allItems.Count == 0) return;
 
         timer += Time.deltaTime;
         if (timer < spawnInterval) return;
-
         timer = 0f;
-        ItemSO pick = allItems[Random.Range(0, allItems.Count)];
+
+        SpawnRow(nextX);
+        nextX -= Mathf.Abs(rowSpacing); // move further into negative X for next row
+    }
+
+    void SpawnRow(float x)
+    {
+        int count = Random.Range(minPerRow, maxPerRow + 1);
 
         float zMin = laneCenterZ - laneHalfWidth + edgePadding;
         float zMax = laneCenterZ + laneHalfWidth - edgePadding;
-        float z = Random.Range(zMin, zMax);
 
-        float x = nextX + Random.Range(-xJitter, xJitter);
+        for (int i = 0; i < count; i++)
+        {
+            // even slots across lane; for 1 item use center
+            float t = (count == 1) ? 0.5f : i / (float)(count - 1);
+            float z = Mathf.Lerp(zMin, zMax, t);
+            if (zJitter > 0f) z = Mathf.Clamp(z + Random.Range(-zJitter, zJitter), zMin, zMax);
 
-        Vector3 spawnPos = new Vector3(
-            x,
-            pick.prefab.transform.position.y,
-            z
-        );
+            ItemSO pick = allItems[Random.Range(0, allItems.Count)];
+            Vector3 pos = new Vector3(x, groundY, z);
 
-        Instantiate(pick.prefab, spawnPos, pick.prefab.transform.rotation, transform);
-        nextX -= xOffset;
+            var go = Instantiate(pick.prefab, pos, pick.prefab.transform.rotation, transform);
+
+            // Snap the object's bottom to groundY
+            SnapBottomToY(go, groundY);
+        }
+
+        void SnapBottomToY(GameObject go, float targetY)
+        {
+            // Prefer colliders (gameplay touch), else renderers (visual bottom)
+            var colliders = go.GetComponentsInChildren<Collider>(includeInactive: true);
+            if (colliders != null && colliders.Length > 0)
+            {
+                float minY = float.PositiveInfinity;
+                foreach (var c in colliders)
+                {
+                    // bounds are world-space
+                    if (c.enabled) minY = Mathf.Min(minY, c.bounds.min.y);
+                }
+                if (!float.IsPositiveInfinity(minY))
+                {
+                    Vector3 p = go.transform.position;
+                    p.y += (targetY - minY);
+                    go.transform.position = p;
+                    return;
+                }
+            }
+
+            var renderers = go.GetComponentsInChildren<Renderer>(includeInactive: true);
+            if (renderers != null && renderers.Length > 0)
+            {
+                float minY = float.PositiveInfinity;
+                foreach (var r in renderers)
+                {
+                    if (r.enabled && r.bounds.size != Vector3.zero)
+                        minY = Mathf.Min(minY, r.bounds.min.y);
+                }
+                if (!float.IsPositiveInfinity(minY))
+                {
+                    Vector3 p = go.transform.position;
+                    p.y += (targetY - minY);
+                    go.transform.position = p;
+                }
+            }
+        }
     }
-
-#if UNITY_EDITOR
-    void OnDrawGizmosSelected()
-    {
-        // visualize the lane band
-        Gizmos.color = new Color(0f, 1f, 1f, 0.2f);
-        float z0 = laneCenterZ - laneHalfWidth;
-        float z1 = laneCenterZ + laneHalfWidth;
-        Vector3 a = new Vector3(currentX, 0, z0);
-        Vector3 b = new Vector3(currentX - 100f, 0, z1); // 100 units preview
-        Vector3 center = (a + b) * 0.5f;
-        Vector3 size = new Vector3(Mathf.Abs(b.x - a.x), 0.05f, Mathf.Abs(z1 - z0));
-        Gizmos.DrawCube(center, size);
-    }
-#endif
 }

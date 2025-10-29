@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 788492473526031086}
   - component: {fileID: 5575585932753905504}
   - component: {fileID: 8667755059018199368}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_G002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,9 +92,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3316104915061710023}
-  m_Layer: 0
+  - component: {fileID: 6575979694394169072}
+  - component: {fileID: 3964963262382390209}
+  - component: {fileID: -4893544485973552265}
+  m_Layer: 7
   m_Name: Advanced4_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +122,78 @@ Transform:
   - {fileID: 788492473526031086}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &6575979694394169072
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281104215721429948}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &3964963262382390209
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281104215721429948}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 47.955086, y: 21.751822, z: 25.544453}
+  m_Center: {x: 0.43821335, y: 9.2535715, z: -0.048229218}
+--- !u!114 &-4893544485973552265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281104215721429948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e1fe62ed77804daf25529b532a3a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDrive: 1
+  targetSpeed: 70
+  maxSpeed: 70
+  acceleration: 80
+  brake: 90
+  maxSteerAngle: 25
+  steerEase: 12
+  steerReturn: 180
+  turnScaleAtLowSpeed: 0.4
+  wheelMeshes: []
+  wheelSpinScale: 60
+  localForwardAxis: {x: -1, y: 0, z: 0}
 --- !u!1 &5232210525499673307
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +205,7 @@ GameObject:
   - component: {fileID: 1448512904670381573}
   - component: {fileID: 4835971687208053002}
   - component: {fileID: 6523614038921936797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_G001.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +288,7 @@ GameObject:
   - component: {fileID: 8943004195979258240}
   - component: {fileID: 1492975739024015745}
   - component: {fileID: 7278506535974396392}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_G001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +371,7 @@ GameObject:
   - component: {fileID: 7330169815997157064}
   - component: {fileID: 8945763104975686609}
   - component: {fileID: 2213605840692357273}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Offroad Body - Advanced4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +456,7 @@ GameObject:
   - component: {fileID: 7996183760925371877}
   - component: {fileID: 1566235763546339695}
   - component: {fileID: 6868226396544438926}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_G
   m_TagString: Untagged
   m_Icon: {fileID: 0}

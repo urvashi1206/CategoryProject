@@ -9,9 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8331781317425705206}
-  m_Layer: 0
+  - component: {fileID: -4589628019961509193}
+  - component: {fileID: 1398128488040563018}
+  - component: {fileID: -6897115842978803532}
+  m_Layer: 7
   m_Name: Advanced2_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,6 +39,78 @@ Transform:
   - {fileID: 1225762710905791537}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &-4589628019961509193
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261896762363544285}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1398128488040563018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261896762363544285}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 50.208344, y: 18.049305, z: 23.446001}
+  m_Center: {x: -0.10417175, y: 7.5951443, z: -0.05148983}
+--- !u!114 &-6897115842978803532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261896762363544285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e1fe62ed77804daf25529b532a3a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDrive: 1
+  targetSpeed: 70
+  maxSpeed: 70
+  acceleration: 80
+  brake: 90
+  maxSteerAngle: 25
+  steerEase: 12
+  steerReturn: 180
+  turnScaleAtLowSpeed: 0.4
+  wheelMeshes: []
+  wheelSpinScale: 60
+  localForwardAxis: {x: -1, y: 0, z: 0}
 --- !u!1 &3693466431888007349
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,7 +122,7 @@ GameObject:
   - component: {fileID: 1225762710905791537}
   - component: {fileID: 5704018651117861349}
   - component: {fileID: 8346622148518764280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_A003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +205,7 @@ GameObject:
   - component: {fileID: 6719411730220342400}
   - component: {fileID: 649833704196795852}
   - component: {fileID: 4688038237717303565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sedan Body - Advanced2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +290,7 @@ GameObject:
   - component: {fileID: 1829227966988836348}
   - component: {fileID: 6960831929613282307}
   - component: {fileID: 390915449996712299}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +373,7 @@ GameObject:
   - component: {fileID: 5567366057959261804}
   - component: {fileID: 3241908378921623130}
   - component: {fileID: 5829684844946376428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_A001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +456,7 @@ GameObject:
   - component: {fileID: 8309650252203741376}
   - component: {fileID: 4868481735030850894}
   - component: {fileID: 443096723989082827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_A002
   m_TagString: Untagged
   m_Icon: {fileID: 0}

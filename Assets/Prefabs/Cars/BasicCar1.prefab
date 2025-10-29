@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4325131656130966492}
   - component: {fileID: 1820276865532370958}
   - component: {fileID: 3017390224339980248}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Compact Body - Basic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 355849717458303047}
   - component: {fileID: 8546234877513243357}
   - component: {fileID: 6635334831504916058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_C001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483648618901948816}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.50000006, y: -0.49999997, z: -0.49999997, w: 0.50000006}
+  m_LocalRotation: {x: -0.16958699, y: -0.6866515, z: -0.16899636, w: 0.68643296}
   m_LocalPosition: {x: 12.499999, y: 2.71, z: -6.1000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 9152612995341774354}
   - component: {fileID: 8994641110483964382}
   - component: {fileID: 7724472042214960623}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_C002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649785338212425309}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.50000006, y: -0.49999997, z: -0.49999997, w: 0.50000006}
+  m_LocalRotation: {x: -0.16958699, y: -0.6866515, z: -0.16899636, w: 0.68643296}
   m_LocalPosition: {x: -10.939999, y: 2.71, z: 6.1000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 3299543483669095615}
   - component: {fileID: 5723855371020371416}
   - component: {fileID: 5223681578599629780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776901631110048469}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.50000006, y: -0.49999997, z: -0.49999997, w: 0.50000006}
+  m_LocalRotation: {x: -0.16958699, y: -0.6866515, z: -0.16899636, w: 0.68643296}
   m_LocalPosition: {x: -10.94, y: 2.71, z: -6.0999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -343,10 +343,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3676502871222192383}
-  - component: {fileID: 2165673768992213864}
   - component: {fileID: 3231225746429025705}
   - component: {fileID: 4231469863338741151}
-  m_Layer: 0
+  - component: {fileID: 2648575343400845495}
+  m_Layer: 7
   m_Name: BasicCar1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -373,28 +373,6 @@ Transform:
   - {fileID: 9179582928703677407}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2165673768992213864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008466900354406793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a98e1fe62ed77804daf25529b532a3a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceleration: 40
-  maxSpeed: 25
-  brakeForce: 60
-  turnSmooth: 6
-  wheelMeshes:
-  - {fileID: 3299543483669095615}
-  - {fileID: 355849717458303047}
-  - {fileID: 9152612995341774354}
-  - {fileID: 9179582928703677407}
-  wheelSpinSpeed: 720
 --- !u!54 &3231225746429025705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -443,6 +421,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 39.199837, y: 16.880684, z: 29.871704}
   m_Center: {x: -0.3501358, y: 7.2334275, z: 6.2649517}
+--- !u!114 &2648575343400845495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008466900354406793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e1fe62ed77804daf25529b532a3a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDrive: 1
+  targetSpeed: 70
+  maxSpeed: 70
+  acceleration: 80
+  brake: 90
+  maxSteerAngle: 25
+  steerEase: 12
+  steerReturn: 180
+  turnScaleAtLowSpeed: 0.4
+  wheelMeshes: []
+  wheelSpinScale: 60
+  localForwardAxis: {x: -1, y: 0, z: 0}
 --- !u!1 &2166082638838239697
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +456,7 @@ GameObject:
   - component: {fileID: 9179582928703677407}
   - component: {fileID: 2751894000450710157}
   - component: {fileID: 4083801889556502911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_C003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2166082638838239697}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.50000006, y: -0.49999997, z: -0.49999997, w: 0.50000006}
+  m_LocalRotation: {x: -0.16958699, y: -0.6866515, z: -0.16899636, w: 0.68643296}
   m_LocalPosition: {x: 12.499999, y: 2.71, z: 6.0999985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

@@ -28,15 +28,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5821092213539269295}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.6903455, y: -0.15304586, z: 0.15304586, w: 0.6903455}
-  m_LocalPosition: {x: 0, y: 12, z: 0}
+  m_LocalRotation: {x: -0.4727294, y: -0.23277922, z: 0.5258584, w: 0.66769284}
+  m_LocalPosition: {x: 0, y: 5, z: -0.4280827}
   m_LocalScale: {x: 470.48383, y: 505.23734, z: 470.48383}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8931098112958665055}
   - {fileID: 119259072104725197}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -65, y: -90, z: 90}
+  m_LocalEulerAnglesHint: {x: -22.734, y: -61.175, z: 90}
 --- !u!33 &5792350696498303349
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 119259072104725197}
   - component: {fileID: 6052198553666437265}
   - component: {fileID: 8753789325876422131}
-  - component: {fileID: 752090036670989108}
+  - component: {fileID: 3524391551140327279}
   m_Layer: 0
   m_Name: Sphere.004
   m_TagString: Untagged
@@ -212,7 +212,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &752090036670989108
+--- !u!65 &3524391551140327279
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,8 +231,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0252707, y: 0.025979722, z: 0.021157632}
-  m_Center: {x: 0, y: -0.001327863, z: -0.00073800556}
+  m_Size: {x: 0.042117838, y: 0.04329954, z: 0.035262723}
+  m_Center: {x: -1.13582754e-10, y: -0.0022131046, z: -0.0012300091}
 --- !u!1 &6506954863380379132
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 8931098112958665055}
   - component: {fileID: 2101508208187190936}
   - component: {fileID: 3964476306111054692}
-  - component: {fileID: 2032825303385680356}
+  - component: {fileID: 2797327021065110942}
   m_Layer: 0
   m_Name: Sphere.001
   m_TagString: Untagged
@@ -317,7 +317,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2032825303385680356
+--- !u!65 &2797327021065110942
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,5 +336,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.026969992, y: 0.016360234, z: 0.014249396}
-  m_Center: {x: 0.000055642417, y: -0.007492164, z: -0.002839896}
+  m_Size: {x: 0.044949986, y: 0.027267061, z: 0.023748996}
+  m_Center: {x: 0.00009273486, y: -0.01248694, z: -0.0047331643}

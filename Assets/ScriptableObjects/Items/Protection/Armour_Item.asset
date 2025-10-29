@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Armour_Item
   m_EditorClassIdentifier: 
   displayName: Armour
-  prefab: {fileID: 4696144547783120809, guid: bae8c34fe5f271845a3506379a56d1eb, type: 3}
+  prefab: {fileID: 2076895992935087791, guid: bae8c34fe5f271845a3506379a56d1eb, type: 3}
   isCommon: 0

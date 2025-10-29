@@ -42,7 +42,8 @@ public class Collectible : MonoBehaviour
 
         if (!hitRoot.CompareTag("Player")) return;
 
-        GameEvents.CollectItem(itemData);
-        gameObject.SetActive(false);
+        //GameEvents.CollectItem(itemData);
+        GameEvents.CollectItemAt(itemData, transform.position);
+        Destroy(gameObject);
     }
 }

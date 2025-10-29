@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4686854281237828847}
   - component: {fileID: 1075059769181280125}
   - component: {fileID: 2280616364260035575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_E003.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3634337718281393889}
   - component: {fileID: 5700311898975200122}
   - component: {fileID: 4318362176976121415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_E.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7955309193052027914}
   - component: {fileID: 7734921433414881936}
   - component: {fileID: 3313594962018454294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_E002.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 6296006825756301151}
   - component: {fileID: 5484477808413727006}
   - component: {fileID: 1527396781384995793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SUV Body - Advanced3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 5317839891823811228}
   - component: {fileID: 4934208369487844848}
   - component: {fileID: 4066663901110097774}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_E001.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,9 +430,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718088224274867859}
-  m_Layer: 0
+  - component: {fileID: -8912543263787400481}
+  - component: {fileID: 3263332296146370730}
+  - component: {fileID: -4653320349668918682}
+  m_Layer: 7
   m_Name: Advanced3_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -457,3 +460,75 @@ Transform:
   - {fileID: 4686854281237828847}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &-8912543263787400481
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433440798880232157}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &3263332296146370730
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433440798880232157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 55.016468, y: 24.150705, z: 26.494448}
+  m_Center: {x: -0.05924034, y: 10.2513685, z: -0.17084408}
+--- !u!114 &-4653320349668918682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433440798880232157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e1fe62ed77804daf25529b532a3a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDrive: 1
+  targetSpeed: 70
+  maxSpeed: 70
+  acceleration: 80
+  brake: 90
+  maxSteerAngle: 25
+  steerEase: 12
+  steerReturn: 180
+  turnScaleAtLowSpeed: 0.4
+  wheelMeshes: []
+  wheelSpinScale: 60
+  localForwardAxis: {x: -1, y: 0, z: 0}
